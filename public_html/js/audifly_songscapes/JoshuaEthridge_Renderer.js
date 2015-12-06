@@ -143,6 +143,7 @@ function JoshuaEthridge_Renderer(initCanvas) {
         this.smallCircleV = -1;
         this.smallCircleVD = -1;
         this.smallCircleH = -1;
+        this.smallCircleHD = -1;
     };
  
     /*
@@ -260,7 +261,7 @@ function JoshuaEthridge_Renderer(initCanvas) {
         this.graphicsContext.stroke();
         
         // Small circles
-            if(this.smallCircleV < 0){
+            if(this.smallCircleVD < 0){
                 this.smallCircleV = this.canvas.height / 2 + lat;
                 
                 this.graphicsContext.beginPath();
@@ -300,6 +301,52 @@ function JoshuaEthridge_Renderer(initCanvas) {
                 this.graphicsContext.fill();
                 this.graphicsContext.lineWidth = 1;
                 this.graphicsContext.stroke();
+                
+                //if(this.smallCircleV < 0)
+            }
+            
+            if(this.smallCircleHD < 0){
+                this.smallCircleH = this.canvas.width / 2 + lat;
+                
+                this.graphicsContext.beginPath();
+                this.graphicsContext.arc(this.smallCircleH, 
+                this.canvas.height / 2, 50, 0, 2 * Math.PI, false);
+                this.graphicsContext.fillStyle = 'green';
+                this.graphicsContext.fill();
+                this.graphicsContext.lineWidth = 1;
+                this.graphicsContext.stroke();
+                
+                this.smallCircleHD = this.canvas.height / 2 - lat;
+                
+                this.graphicsContext.beginPath();
+                this.graphicsContext.arc(this.smallCircleHD,
+                this.canvas.height / 2, 50, 0, 2 * Math.PI, false);
+                this.graphicsContext.fillStyle = 'green';
+                this.graphicsContext.fill();
+                this.graphicsContext.lineWidth = 1;
+                this.graphicsContext.stroke();
+            } else {
+                this.smallCircleH += lat;
+                
+                this.graphicsContext.beginPath();
+                this.graphicsContext.arc(this.smallCircleH, 
+                this.canvas.height / 2, 50, 0, 2 * Math.PI, false);
+                this.graphicsContext.fillStyle = 'green';
+                this.graphicsContext.fill();
+                this.graphicsContext.lineWidth = 1;
+                this.graphicsContext.stroke();
+                
+                this.smallCircleHD -= lat;
+                
+                this.graphicsContext.beginPath();
+                this.graphicsContext.arc(this.smallCircleHD,
+                this.canvas.height / 2, 50, 0, 2 * Math.PI, false);
+                this.graphicsContext.fillStyle = 'green';
+                this.graphicsContext.fill();
+                this.graphicsContext.lineWidth = 1;
+                this.graphicsContext.stroke();
+                
+                //if(this.smallCircleV < 0)
             }
             
         // TIME DOMAIN TEST END
