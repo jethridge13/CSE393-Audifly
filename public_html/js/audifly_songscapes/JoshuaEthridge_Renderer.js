@@ -316,7 +316,7 @@ function JoshuaEthridge_Renderer(initCanvas) {
                 this.graphicsContext.lineWidth = 1;
                 this.graphicsContext.stroke();
                 
-                this.smallCircleHD = this.canvas.height / 2 - lat;
+                this.smallCircleHD = this.canvas.width / 2 - lat;
                 
                 this.graphicsContext.beginPath();
                 this.graphicsContext.arc(this.smallCircleHD,
