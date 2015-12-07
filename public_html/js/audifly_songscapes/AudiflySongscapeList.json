@@ -93,37 +93,21 @@
             "fileName": "Slainte.mp3",
             "artist": "Richard McKenna",
             "playerType": "mp3Player",
-            "rendererFile": "RichardMcKenna_Renderer.js",
-            "renderer": "RichardMcKenna_Renderer"
+            "rendererFile": "JoshuaEthridge_Renderer.js",
+            "renderer": "JoshuaEthridge_Renderer"
         },
         {
             "title": "Tracked",
             "fileName": "Tracked.mp3",
             "artist": "Richard McKenna & Joao Alvarez",
             "playerType": "mp3Player",
-            "rendererFile": "RichardMcKenna_Renderer.js",
-            "renderer": "RichardMcKenna_Renderer"
+            "rendererFile": "JoshuaEthridge_Renderer.js",
+            "renderer": "JoshuaEthridge_Renderer"
         },
         {
             "title": "Summoning of an Ancient Evil",
-            "fileName": "Tracked.mp3",
+            "fileName": "SummoningofanAncientEvil.mp3",
             "artist": "Leg Day",
-            "playerType": "mp3Player",
-            "rendererFile": "JoshuaEthridge_Renderer.js",
-            "renderer": "JoshuaEthridge_Renderer"
-        },
-        {
-            "title": "Dying Breed",
-            "fileName": "DyingBreed.mp3",
-            "artist": "Five Finger Death Punch",
-            "playerType": "mp3Player",
-            "rendererFile": "JoshuaEthridge_Renderer.js",
-            "renderer": "JoshuaEthridge_Renderer"
-        },
-        {
-            "title": "No Leaf Clover",
-            "fileName": "NoLeafClover.mp3",
-            "artist": "Metallica",
             "playerType": "mp3Player",
             "rendererFile": "JoshuaEthridge_Renderer.js",
             "renderer": "JoshuaEthridge_Renderer"
